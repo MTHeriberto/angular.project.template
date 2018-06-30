@@ -1,0 +1,14 @@
+<div id="wrapper">
+    <!-- Navigation -->
+    <div ng-include="'views/common/navigation.html'"></div>
+
+    <!-- ng-class with current state name give you the ability to extended customization your view -->
+    <div id="page-wrapper" class="{{$state.current.name}}">
+
+        <!-- Render the state content view -->
+        <div ui-view></div>
+        
+        <!-- Footer -->
+        <div ng-include="'views/common/footer.html'"></div>
+    </div>
+</div>
